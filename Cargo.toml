@@ -1,0 +1,5 @@
+[package]
+
+name = "amalie"
+version = "0.1.0"
+authors = [ "Michael Donaghy <md401@srcf.ucam.org>" ]
