@@ -4,5 +4,5 @@ version = "0.1.0"
 authors = [ "Michael Donaghy <md401@srcf.ucam.org>" ]
 
 [dependencies]
+gcc = "0.3.41"
 llvm-sys = "0.4.0"
-gcc-rs = "0.3.41"
