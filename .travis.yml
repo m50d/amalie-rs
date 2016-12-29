@@ -2,4 +2,4 @@ language: rust
 before_install:
  - sudo add-apt-repository 'deb http://apt.llvm.org/trusty/ llvm-toolchain-trusty-3.8 main'
  - sudo apt-get -qq update
- - sudo apt-get install -y llvm-3.8-dev
+ - sudo apt-get install -y llvm llvm-3.8-dev
