@@ -1,11 +1,8 @@
 language: rust
 dist: trusty
 before_install:
- - which llvm-config
- - ls -l `which llvm-config`
- - dpkg -S `which llvm-config`
-# - wget -O - http://llvm.org/apt/llvm-snapshot.gpg.key|sudo apt-key add -
-# - sudo add-apt-repository -y ppa:ubuntu-toolchain-r/test
-# - sudo add-apt-repository -y 'deb http://apt.llvm.org/precise/ llvm-toolchain-precise-3.8 main'
-# - sudo apt-get -qq update
-# - sudo apt-get -y --force-yes install llvm llvm-3.8-dev
+ - sudo rm -rf /usr/local/clang-*
+ - wget -O - http://llvm.org/apt/llvm-snapshot.gpg.key|sudo apt-key add -
+ - sudo add-apt-repository -y 'deb http://apt.llvm.org/trusty/ llvm-toolchain-trusty-3.8 main'
+ - sudo apt-get -qq update
+ - sudo apt-get -y --force-yes install llvm llvm-3.8-dev
