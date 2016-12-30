@@ -4,5 +4,5 @@ before_install:
  - wget -O - http://llvm.org/apt/llvm-snapshot.gpg.key|sudo apt-key add -
  - sudo add-apt-repository 'deb http://apt.llvm.org/trusty/ llvm-toolchain-trusty-3.8 main'
  - sudo apt-get -qq update
- - sudo apt-get -y purge llvm-3.5
+ - sudo apt-get -y purge llvm-3.5 llvm-3.5-dev llvm-3.5-doc llvm-3.5-examples llvm-3.5-runtime llvm-3.5-tools
  - sudo apt-get -y install llvm-3.8-dev
