@@ -10,3 +10,5 @@ before_install:
  - which llvm-config
  - ls -l `which llvm-config`
  - dpkg -S `which llvm-config`
+ - ls -l $(readlink `which llvm-config`)
+ - dpkg -S $(readlink `which llvm-config`)
