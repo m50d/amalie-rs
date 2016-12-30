@@ -1,5 +1,7 @@
 language: rust
 dist: trusty
+env:
+ - PATH=/usr/lib/llvm-3.8/bin:$PATH
 before_install:
  - sudo rm -rf /usr/local/clang-*
  - sudo apt-get purge llvm-3.4
