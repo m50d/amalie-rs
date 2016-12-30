@@ -6,3 +6,6 @@ before_install:
  - sudo add-apt-repository -y 'deb http://apt.llvm.org/trusty/ llvm-toolchain-trusty-3.8 main'
  - sudo apt-get -qq update
  - sudo apt-get -y --force-yes install llvm llvm-3.8-dev
+ - which llvm-config
+ - ls -l `which llvm-config`
+ - dpkg -S `which llvm-config`
