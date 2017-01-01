@@ -4,7 +4,8 @@ env:
  - PATH=/usr/lib/llvm-3.8/bin:$PATH
 before_install:
  - sudo rm -rf /usr/local/clang-*
- - sudo apt-get purge llvm-3.4
+ - sudo apt-get -y purge llvm-3.4
+ - sudo apt-get -y autoremove
  - wget -O - http://llvm.org/apt/llvm-snapshot.gpg.key|sudo apt-key add -
  - sudo add-apt-repository -y 'deb http://apt.llvm.org/trusty/ llvm-toolchain-trusty-3.8 main'
  - sudo apt-get -qq update
